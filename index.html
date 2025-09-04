@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Shah | Climate Change & ESG Consultant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #10b981);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -38px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #3b82f6;
+            border: 3px solid white;
+        }
+        .skill-pill:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold gradient-text">Jay Shah</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    <a href="#experience" class="text-gray-700 hover:text-blue-600 transition">Experience</a>
+                    <a href="#skills" class="text-gray-700 hover:text-blue-600 transition">Skills</a>
+                    <a href="#education" class="text-gray-700 hover:text-blue-600 transition">Education</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-toggle" class="text-gray-700">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white pb-4 px-4">
+            <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600 transition">About</a>
+            <a href="#experience" class="block py-2 text-gray-700 hover:text-blue-600 transition">Experience</a>
+            <a href="#skills" class="block py-2 text-gray-700 hover:text-blue-600 transition">Skills</a>
+            <a href="#education" class="block py-2 text-gray-700 hover:text-blue-600 transition">Education</a>
+            <a href="#contact" class="block mt-2 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition text-center">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-r from-blue-50 to-green-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Jay Shah, <span class="gradient-text">SCR®</span></h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 mb-6">Climate Change & ESG Consultant | Sustainability Specialist</h2>
+                    <p class="text-lg text-gray-600 mb-8">Purpose-driven Climate and ESG Specialist with 9+ years' experience across asset management, consulting, maritime, public and private sectors.</p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition font-medium">Get In Touch</a>
+                        <a href="#experience" class="border border-blue-600 text-blue-600 px-6 py-3 rounded-md hover:bg-blue-50 transition font-medium">My Experience</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center" data-aos="fade-left">
+                    <div class="relative">
+                        <div class="w-64 h-64 md:w-80 md:h-80 bg-blue-100 rounded-full overflow-hidden shadow-xl">
+                            <!-- Profile image -->
+                            <img src="your-photo.jpg" alt="Jay Shah" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute -bottom-5 -right-5 bg-white p-4 rounded-lg shadow-md">
+                            <div class="flex items-center">
+                                <div class="bg-green-100 p-2 rounded-full mr-2">
+                                    <i data-feather="award" class="text-green-600"></i>
+                                </div>
+                                <span class="font-medium">SCR® Certified</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">About Me</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="md:flex">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10" data-aos="fade-right">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Who I Am</h3>
+                    <p class="text-gray-600 mb-6">I am a purpose-driven Climate and ESG Specialist with extensive experience in developing decarbonization strategies, transition plans, and climate risk assessments. My expertise lies in aligning climate disclosures with global frameworks and delivering robust climate resilience solutions.</p>
+                    <p class="text-gray-600 mb-6">I have contributed to net-zero strategies across energy, urban infrastructure, asset management, and maritime sectors with a focus on decarbonization, sustainable finance, and ESG reporting.</p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">ESG Reporting</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Decarbonization</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Climate Risk</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Sustainable Finance</span>
+                    </div>
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Personal Information</h3>
+                    <div class="bg-gray-50 rounded-lg p-6 shadow-sm">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="flex items-start">
+                                <i data-feather="mail" class="text-blue-600 mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="text-gray-500 text-sm">Email</h4>
+                                    <p class="text-gray-800">jayshah596@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="phone" class="text-blue-600 mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="text-gray-500 text-sm">Phone</h4>
+                                    <p class="text-gray-800">+44-7435996857</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="map-pin" class="text-blue-600 mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="text-gray-500 text-sm">Location</h4>
+                                    <p class="text-gray-800">Coventry, UK CV3 6HG</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="linkedin" class="text-blue-600 mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="text-gray-500 text-sm">LinkedIn</h4>
+                                    <a href="https://www.linkedin.com/in/jay-shah-climate/" target="_blank" class="text-blue-600 hover:underline">Jay Shah</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Key Skills</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="file-text" class="text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Sustainability Reporting</h3>
+                    <p class="text-gray-600">Expertise in delivering ESG reports aligned with ISSB, GRI, SASB, TCFD, CDP, and EU Taxonomy standards.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="database" class="text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Data Collection & Audit</h3>
+                    <p class="text-gray-600">Proficient in managing ESG data collection processes and assurance with external consultants.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="cloud" class="text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Climate Analysis</h3>
+                    <p class="text-gray-600">Trend-Scenario Analysis & Long-Term Projections, Climate Adaptation Strategy Development.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-yellow-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="clipboard" class="text-yellow-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Project Management</h3>
+                    <p class="text-gray-600">Leading multiple stakeholders to deliver high-quality sustainability reports and initiatives.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-red-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="bar-chart-2" class="text-red-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Data-Driven Analysis</h3>
+                    <p class="text-gray-600">Experience with Power BI, Fabric, MSCI, Excel, Python, Streamlit, GitHub, Gen AI tools and ArcGIS.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-indigo-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="users" class="text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Collaboration</h3>
+                    <p class="text-gray-600">Proven ability to collaborate cross-functionally and present ESG strategies to senior stakeholders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Work Experience</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="relative">
+                <!-- Timeline -->
+                <div class="border-l-2 border-blue-200 absolute h-full left-4 md:left-1/2 transform md:-translate-x-1/2"></div>
+                
+                <!-- Timeline Items -->
+                <div class="space-y-8">
+                    <!-- Item 1 -->
+                    <div class="relative pl-10 md:pl-0 md:flex justify-between items-center" data-aos="fade-up">
+                        <div class="md:w-5/12 md:pr-8 md:text-right mb-6 md:mb-0">
+                            <span class="text-sm text-blue-600 font-medium">November 2024 – May 2025</span>
+                            <h3 class="text-xl font-bold text-gray-800">ESG Manager (Climate and Sustainability)</h3>
+                            <p class="text-gray-600 font-medium">PGIM-Global Asset Management-Contract</p>
+                        </div>
+                        <div class="hidden md:block w-2/12 flex justify-center">
+                            <div class="w-4 h-4 bg-blue-600 rounded-full"></div>
+                        </div>
+                        <div class="md:w-5/12 bg-gray-50 p-6 rounded-lg shadow-sm">
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                                    <span>Directed ESG reporting strategy under ISSB, UK SDR, EU SFDR & CSRD frameworks</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                                    <span>Spearheaded development of a Climate MVP dashboard using MSCI data</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                                    <span>Led ESG & climate benchmarking of 20 industry peers</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="relative pl-10 md:pl-0 md:flex justify-between items-center" data-aos="fade-up">
+                        <div class="md:w-5/12 md:order-3 md:pl-8">
+                            <span class="text-sm text-blue-600 font-medium">August 2023 – August 2024</span>
+                            <h3 class="text-xl font-bold text-gray-800">ESG Analyst (Climate and ESG)</h3>
+                            <p class="text-gray-600 font-medium">Purus-Enabling Clean energy Transition</p>
+                        </div>
+                        <div class="hidden md:block w-2/12 flex justify-center md:order-2">
+                            <div class="w-4 h-4 bg-blue-600 rounded-full"></div>
+                        </div>
+                        <div class="md:w-5/12 md:order-1 bg-gray-50 p-6 rounded-lg shadow-sm">
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                                    <span>Led ESG and sustainable finance strategies aligned with CSRD, SFDR, TCFD</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                                    <span>Developed net-zero roadmaps and modeled energy efficiency</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                                    <span>Conducted GHG inventories (Scope 1–3) using ISO 14064 & GHG Protocol</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 3 -->
+                    <div class="relative pl-10 md:pl-0 md:flex justify-between items-center" data-aos="fade-up">
+                        <div class="md:w-5/12 md:pr-8 md:text-right mb-6 md:mb-0">
+                            <span class="text-sm text-blue-600 font-medium">July 2020 - May 2023</span>
+                            <h3 class="text-xl font-bold text-gray-800">Project Officer</h3>
+                            <p class="text-gray-600 font-medium">ICLEI - International Council for Local Environmental Initiatives</p>
+                        </div>
+                        <div class="hidden md:block w-2/12 flex justify-center">
+                            <div class="w-4 h-4 bg-blue-600 rounded-full"></div>
+                        </div>
+                        <div class="md:w-5/12 bg-gray-50 p-6 rounded-lg shadow-sm">
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                                    <span>Partnered with Swiss Development Agency on sustainable urban development</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                                    <span>Contributed to CapaCITIES initiative focusing on impact investing</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                                    <span>Led GHG inventories and clean tech projects</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- More items can be added following the same pattern -->
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                    View Full Experience
+                    <i data-feather="arrow-right" class="ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Education & Qualifications</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i data-feather="award" class="text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Sustainability and Climate Risk (SCR®)</h3>
+                    </div>
+                    <p class="text-gray-600">Certified by Global Association of Risk Professionals (GARP)</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <i data-feather="book" class="text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Trade Rules, Sustainable Development</h3>
+                    </div>
+                    <p class="text-gray-600">University of Cambridge - Funded</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 p-3 rounded-full mr-4">
+                            <i data-feather="book-open" class="text-purple-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Place Based Decarbonization</h3>
+                    </div>
+                    <p class="text-gray-600">Keele University – Funded</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                            <i data-feather="graduation-cap" class="text-yellow-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Masters in Sustainable Infrastructure</h3>
+                    </div>
+                    <p class="text-gray-600">CEPT University</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-red-100 p-3 rounded-full mr-4">
+                            <i data-feather="layers" class="text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Bachelor of Civil Engineering</h3>
+                    </div>
+                    <p class="text-gray-600">Gujarat Technological University</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Tools & Dashboards</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="bar-chart-2" class="text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center text-gray-800 mb-2">Climate MVP Dashboard</h3>
+                    <p class="text-gray-600 text-center">For a company with $1.4 trillion AUM (PGIM)</p>
+                    <div class="mt-4 text-center">
+                        <a href="https://ghgscope123.streamlit.app/" target="_blank" class="text-blue-600 hover:underline text-sm">View Tool</a>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="calculator" class="text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center text-gray-800 mb-2">GHG Emission Calculator</h3>
+                    <p class="text-gray-600 text-center">Covering Scope 1, 2, and 3 emissions</p>
+                    <div class="mt-4 text-center">
+                        <a href="https://ghgscope123.streamlit.app/" target="_blank" class="text-blue-600 hover:underline text-sm">View Tool</a>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="trending-up" class="text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center text-gray-800 mb-2">Climate Scenario Analysis</h3>
+                    <p class="text-gray-600 text-center">Company-level climate scenario analysis</p>
+                    <div class="mt-4 text-center">
+                        <a href="https://climateriskanalysisbyjayshah.streamlit.app/" target="_blank" class="text-blue-600 hover:underline text-sm">View Tool</a>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="400">
+                    <div class="bg-indigo-100 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="database" class="text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center text-gray-800 mb-2">ESG Reports Dashboard</h3>
+                    <p class="text-gray-600 text-center">Comprehensive database for ESG reporting</p>
+                    <div class="mt-4 text-center">
+                        <a href="https://esg-reports-dashboard.streamlit.app/" target="_blank" class="text-blue-600 hover:underline text-sm">View Tool</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-r from-blue-600 to-green-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+                <div class="w-20 h-1 bg-white mx-auto"></div>
+            </div>
+            <div class="md:flex">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10" data-aos="fade-right">
+                    <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i data-feather="mail" class="mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium">Email</h4>
+                                <p class="opacity-90">jayshah596@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="phone" class="mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium">Phone</h4>
+                                <p class="opacity-90">+44-7435996857</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="map-pin" class="mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-medium">Address</h4>
+                                <p class="opacity-90">28, Michaelmas Road, Coventry, UK CV3 6HG</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <h3 class="text-2xl font-semibold mb-6">Connect With Me</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://www.linkedin.com/in/jay-shah-climate/" target="_blank" class="bg-white text-blue-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-50 transition">
+                                <i data-feather="linkedin"></i>
+                            </a>
+                            <!-- Add more social links as needed -->
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block mb-2 font-medium">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 rounded-md bg-white bg-opacity-10 border border-white border-opacity-20 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 placeholder-white placeholder-opacity-70" placeholder="Enter your name">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2 font-medium">Your Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-md bg-white bg-opacity-10 border border-white border-opacity-20 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 placeholder-white placeholder-opacity-70" placeholder="Enter your email">
+                        </div>
+                        <div>
+                            <label for="subject" class="block mb-2 font-medium">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-3 rounded-md bg-white bg-opacity-10 border border-white border-opacity-20 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 placeholder-white placeholder-opacity-70" placeholder="Enter subject">
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-2 font-medium">Your Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-md bg-white bg-opacity-10 border border-white border-opacity-20 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 placeholder-white placeholder-opacity-70" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" class="bg-white text-blue-600 px-6 py-3 rounded-md font-medium hover:bg-blue-50 transition">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-xl font-bold gradient-text inline-block">Jay Shah</h3>
+                    <p class="mt-4 text-gray-400 max-w-md">Climate Change & ESG Consultant helping organizations navigate the transition to sustainable business practices.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-8 sm:grid-cols-3">
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-300 uppercase tracking-wider">Quick Links</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="#about" class="text-gray-400 hover:text-white block">About</a>
+                            <a href="#experience" class="text-gray-400 hover:text-white block">Experience</a>
+                            <a href="#skills" class="text-gray-400 hover:text-white block">Skills</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-300 uppercase tracking-wider">Resources</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="#education" class="text-gray-400 hover:text-white block">Education</a>
+                            <a href="#" class="text-gray-400 hover:text-white block">Tools</a>
+                            <a href="#contact" class="text-gray-400 hover:text-white block">Contact</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-300 uppercase tracking-wider">Legal</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="#" class="text-gray-400 hover:text-white block">Privacy Policy</a>
+                            <a href="#" class="text-gray-400 hover:text-white block">Terms</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">© 2024 Jay Shah. All rights reserved.</p>
+                <div class="mt-4 md:mt-0 flex space-x-6">
+                    <a href="https://www.linkedin.com/in/jay-shah-climate/" target="_blank" class="text-gray-400 hover:text-white">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                    <!-- Add more social links as needed -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+            
+            // Change icon
+            const icon = this.querySelector('svg');
+            if (menu.classList.contains('hidden')) {
+                feather.replace();
+            } else {
+                icon.setAttribute('data-feather', 'x');
+                feather.replace();
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                        const menuToggleIcon = document.querySelector('#menu-toggle svg');
+                        menuToggleIcon.setAttribute('data-feather', 'menu');
+                        feather.replace();
+                    }
+                }
+            });
+        });
+        
+        feather.replace();
+    </script>
+</body>
+</html>
